@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css2?family=Marcellus&display=swap);
+
+html {
+  color: white;
+  line-height: 1.7;
+  background-color: #000;
+  /* background: linear-gradient(to bottom, #1d3c23, #154d25); */
+  background-attachment: fixed;
+  font-size: 1.1rem;
+  font-family: 'Marcellus', serif;
+}
+
+img {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+.wrapper {
+  max-width: 90rem; 
+  margin: 0 auto;
+}
+
+.masthead {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  font-size: calc(2rem + 2vw);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.section-one {
+  padding: 0 1.5rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(9, 1fr);
+  margin-top: 10rem;
+}
+
+.section-one-text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  align-self: end;
+  max-width: 18rem;
+}
+
+.section-one-images {
+  display: grid;
+  grid-template-columns: auto 3rem auto;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+}
+
+.section-one-images-item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  z-index: 1;
+}
+
+.section-one-images-item:last-child {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+
+.section-three {
+  padding: 0 1.5rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.section-three-images {
+  justify-content: start;
+  display: grid;
+  grid-template-columns: auto 3rem auto;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+}
+
+.section-three-images-item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+.section-three-images-item:last-child {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+
+.section-three-text {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  max-width: 18rem;
+}
+
+.section-two {
+  padding: 10rem 0 18rem;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.section-two-title {
+  line-height: 1;
+  font-size: calc(2rem + 2vw);
+  animation: textScroll 40s linear infinite;
+}
+
+@keyframes textScroll {
+	0% {
+    transform: translateX(0);
+  }
+
+	100% {
+    transform: translateX(-100%)
+  }
+}
+
+.footer {
+  text-align: center;
+}
